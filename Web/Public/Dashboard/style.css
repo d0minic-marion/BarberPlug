@@ -1,0 +1,108 @@
+html, body {
+  margin: 0;
+  height: 100%;
+  background-color: #222831 ;
+  overflow: auto;
+}
+
+table {
+  background-color: #393e46 !important; 
+  color: white !important;
+}
+
+table th{
+  color: #FD7014 !important;
+}
+
+#buttons {
+  text-align: center;
+}
+
+h1 {
+  padding-top: 10px; 
+}
+
+.box {
+  background-color: #393e46 !important;
+  color: white !important;
+}
+
+.label{
+  color: white !important;
+}
+
+
+#buttonSolde {
+  padding: 15px;
+  width: 200px;
+  border-radius: 30px;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  border: 1px solid rgba(0, 0, 0, 0.13); 
+  transition: all 0.3s ease;
+  background-color: rgb(0, 0, 0);
+  margin-left: 2em;
+  position: relative;
+  bottom: 0.5em;
+}
+
+
+#buttonSolde:hover {
+  background-color: #FD7014;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  transform: scale(1.04);
+  cursor:pointer;
+}
+
+.pageSolde {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  left: 17em;
+  top: 11em;
+}
+
+
+.Menu {
+  background-color: #393e46;
+  height: 25em;
+  width: 50em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1em;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+}
+
+.inputs input {
+  border-radius: 0.5em;
+  border: 0;
+  height: 3em;
+  width: 30em;
+}
+
+#montant {
+  border-radius: 0.5em;
+  border: 0;
+  height: 3em;
+  width: 30em;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+

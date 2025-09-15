@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recherche</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./styleNavBar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.4/css/bulma.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+    <div class="column has-text-left is-one-fifth">
+        <a class="box " style="background-color: rgb(0, 0, 0); color: white !important;" href="/Dashboard">
+            Revenir au Dashboard
+        </a>
+    </div>
+    <div class="container content has-text-centered">
+        <h1 style="margin-top: 25px;">Recherche Un Coiffeur</h1>
+        <div class="columns is-flex-direction-row">
+            <div class="column" style="margin-left: 300px; ">
+                <input type="text" class="input is-rounded" id="valueCoiffeur">
+            </div>
+            <div class="column" > 
+                <button class="button is-black is-rounded" id="rechercherCoiffeur">Chercher</button>
+            </div>
+        </div>
+
+    </div>
+    <div class="container ">
+        <div class="section">
+            <div id="lesCoiffeur" class="row columns is-multiline"></div>
+        </div>
+    </div>
+
+    <script type="module" src="./script.js"></script>
+</body>
+</html>

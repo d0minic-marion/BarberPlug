@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="LoginRegister/style.css">
+    <link rel="stylesheet" href="LoginRegister/styleNavBar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="bg"></div>
+    <div class="container">
+        <h3 id="succes">Compte Creer avec succes.</h3>
+        <div class="login" id="login">
+            <h1>Connexion</h1>
+            <div class="input-container">
+                <label for="" style="color: #FD7014; visibility: hidden;" id="errorLogin">Email Ou Mot de passe Incorrect</label>
+                <input type="text" placeholder="E-mail" id="email">
+                <input type="password" placeholder="Mot de passe" id="password">
+            </div>
+            <div class="forgot-password">
+                <label for="" style="visibility: hidden;"><a href="">Mot de passe oublié ?</a></label>
+            </div>
+            <button id="connexionButton">Connexion</button>
+            <div class="create-account">
+                <label for=""><a href="" id="CreateAccount">Creer un compte</a></label>
+            </div>
+        </div>
+        
+        <div class="register" id="register" style="visibility: hidden;">
+                <h1>Créer un compte</h1>
+                <label for="" style="color: #FD7014; visibility: hidden; position: relative; bottom: 15px;" id="errorRegister">Merci de remplir correctement les champs suivants :</label>
+                <span style="color: #FD7014; visibility: hidden; position: absolute; width: 50em; top: 6em;" id="errorMessage">Prénom,Nom de famille,E-mail,Mot de passe,Numéro de téléphone</span>
+                <span style="color: #FD7014; visibility: hidden;" id="errorEmail">Email déjà utilisé.</span>
+            <div class="input-container" id="inputRegister">
+                <input type="text" placeholder="Prénom" id="prenomReg">
+                <input type="text" placeholder="Nom de famille" id="nomReg">
+                <input type="email" placeholder="E-mail" id="emailReg">
+                <input type="password" placeholder="Mot de passe" id="mdpReg">
+                <input type="tel" placeholder="Numéro de téléphone (exemple: 123-123-1234)" id="telephoneRig">
+
+                <div id="divCoiffeur" style="display: none; flex-direction: column;">
+                    <input type="text" placeholder="Salon De Coiffeur" id="salonRig">
+                    <input type="text" placeholder="adress de Salon" id="adresseRig">
+                    <div style="color: #EEEEEE;">
+                        <label for="">heure Ouverture</label>
+                        <select id="heureOuvertureRig">Select Hour</select>
+                        <label for="">heure Fermeture</label>
+                        <select id="heureFermeture">Select Hour</select>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+
+            <div class="clientCoiffeurButton" style="color: #EEEEEE;">
+                <input type="radio" class="label1" id="Client" name="clientCoiffeur" value="Client" checked >
+                <label for=""><SPAN>Client</SPAN></label>
+    
+                <input type="radio" class="label2" id="Coiffeur" name="clientCoiffeur" value="Coiffeur">
+                <label for=""><Span>Coiffeur</Span></label>
+            </div>
+
+
+
+            <button id="registerButton">Créer</button>
+            <div class="login-account">
+                <label for=""><a href="" id="LoginAccount">Vous avez deja un compte ?</a></label>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="LoginRegister/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,170 @@
+@font-face {
+  font-family: 'BattlesbridgeDemoRegular';
+  src: url('../BattlesbridgeDemoRegular.ttf');
+}
+/* Assuming .pole is a child of the body */
+body {
+  font-family: 'Roboto';
+  text-align: center;
+  margin: 0px;
+  padding: 0px;
+  color: #EEEEEE;
+}
+
+
+.bloc1 {
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+  background-color: #222831;
+  flex-direction: column;
+  overflow: hidden;
+
+}
+
+
+@keyframes fadeInAnimation {
+  0% {
+    margin-top: 0vh;
+    opacity: 0;
+  }
+  100% {
+
+      opacity: 1;
+  }
+}
+
+.logo {
+  position: absolute;
+  height: 90vh;
+  width: auto;
+  display: flex;
+  border-radius: 50px;
+  left: 90vh;
+  z-index: 1;
+
+
+}
+
+.titre {
+  position: absolute;
+  z-index: 1;
+  left: 12vh;
+  margin-top: 15vh;
+  width: 45vh;
+  font-size: 7vh;
+  animation: fadeInAnimation ease-in-out 1s;
+
+}
+.Haut  {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  height: 90vh;
+}
+
+.mainImage {
+  filter: grayscale(30%);
+  height: 90vh;
+  width: 190vh;
+  border-radius: 50px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+
+
+.bloc2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #393e46;
+  height: 90vh;
+}
+
+.bloc2 h1{
+  position: relative;
+  font-size: 100px;
+}
+
+.paragrpah {
+  font-weight: bold;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  width: 80vh;
+  margin-left: 60vh;
+}
+
+.bloc2 button {
+  width: 40vh;
+  position: relative;
+  left: 80vh;
+  background-image: linear-gradient(92.88deg, #455EB5 9.16%, #5643CC 43.89%, #673FD7 64.72%);
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  flex-shrink: 0;
+  font-family: "Inter UI","SF Pro Display",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  height: 4rem;
+  padding: 0 1.6rem;
+  text-align: center;
+  text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+  transition: all .5s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.bloc2 button:hover {
+  width: 60vh;
+  left: 70vh;
+  box-shadow: rgba(80, 63, 205, 0.5) 0 1px 30px;
+  transition-duration: .1s;
+}
+
+@media (min-width: 768px) {
+  .bloc2 button {
+    padding: 0 2.6rem;
+  }
+}
+.lesAvis {
+  background-color: #eeeeee91;
+  color: black;
+  width: 40vh;
+  height: 20vh;
+  padding-top: 5vh;
+  margin: 10px;
+  border-radius: 15px;
+  font-size: 1.5vh;
+  transition: all 0.2s ease-in-out;
+
+}
+
+
+.lesAvis:hover {
+  transform: scale(1.1);
+  background-color: #EEEEEE;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  transition: all 0.2s ease-in-out;
+}
+
+.avis {
+  position: relative;
+  animation: slideAnimation 200s linear infinite;
+  display: flex;
+  width: 2000vh;
+  right: 1800vh;
+}
+
+@keyframes slideAnimation {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}

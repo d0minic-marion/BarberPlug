@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dahsboard</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./styleNavBar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.4/css/bulma.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+    <div class="container content ">
+        <div>
+            <h1 style="color: #EEEEEE !important; padding-top: 100px">Bienvenue dans votre Dahsboard <span style="color: #FD7014;" id="solde"> Votre Solde est de: </span>$<span id="afficherButton"><button id="buttonSolde">Remplir solde</button></span></h1>
+        </div>
+        <div class="pageSolde" id="pageSolde" style="color: #EEEEEE !important; position: absolute; display: none;">
+            <div class="Menu">
+                <h3 style="color: #EEEEEE;">Ajouter de l'argent à votre solde :</h3>
+                <label for="montant">Quelle Montant :</label>
+                <input type="text" id="montant" placeholder="Montant">
+                <div class="inputs">
+                    <label for="numeroCarte">Numéro de carte :</label>
+                    <input type="text" id="numeroCarte" placeholder="Numéro de carte">
+                    <label for="expirationMonth">Date d'expiration :</label>
+                    <div>
+                        <select id="expirationMonth">
+                            <option value="01">Janvier</option>
+                            <option value="02">Février</option>
+                            <option value="03">Mars</option>
+                            <option value="04">Avril</option>
+                            <option value="05">Mai</option>
+                            <option value="06">Juin</option>
+                            <option value="07">Juillet</option>
+                            <option value="08">Août</option>
+                            <option value="09">Septembre</option>
+                            <option value="10">Octobre</option>
+                            <option value="11">Novembre</option>
+                            <option value="12">Décembre</option>
+                        </select>
+                        <select id="expirationYear" placeholder="Année">
+                            <option value="2024">2024</option>
+                            <option value="2025">2025</option>
+                            <option value="2026">2026</option>
+                            <option value="2027">2027</option>
+                            <option value="2028">2028</option>
+                            <option value="2029">2029</option>
+                            <option value="2030">2030</option>
+                            <option value="2031">2031</option>
+                            <option value="2032">2032</option>
+                            <option value="2033">2033</option>
+                            <option value="2034">2034</option>
+                        </select>
+                    </div>
+                    <label for="cvv">CVV :</label>
+                    <input type="text" id="cvv" placeholder="CVV">
+                    <div class="buttons">
+                        <button id="addFundsBtn">Ajouter</button>
+                        <button id="quitBtn">Quitter</button>
+                    </div>
+                </div>                
+            </div>
+        </div>        
+        <div class="field-label">
+            <!-- Left empty for spacing -->
+        </div>
+
+        <hr>
+
+        <div class="columns is-flex-direction-row">
+                <div class="column" id="tableauRendezvous">
+                    <h1 style="color: #EEEEEE !important;">Mes rendez-vous</h1>
+                    <a class="box" href="/RendezVous">
+                        <div >
+                            <table id="tableau" class="table is-narrow">
+                                <thead >
+                                    <tr id="TheadTR">
+                                        <th>Nom</th>
+                                        <th>Prenom</th>
+                                        <th>numero</th>
+                                        <th>Date</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="Tbody">
+                                    <!-- Ajouter Informations -->
+                                </tbody>
+
+                            </table>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="column" id="PlanifierRendezVous" style="display: none;">
+                    <h1 style="color: #EEEEEE !important;"> Pas de rendez-vous ?</h1>
+                    <a class="box has-text-centered "href="/Recherche?rechercheValue="><b>Planifiez un rendez-vous</b></a>
+                </div>
+
+                <div class="column" id="DispoContainer" style="display: none;">
+                    <h1 style="color: #EEEEEE !important;"> Mes Disponibilite</h1>
+                    <a class="box has-text-centered "href="/Disponibilite">
+                        <table class="table" id="Tableau" >
+                            <thead>
+                                <tr>
+                                    <th>Jour</th>
+                                    <th>Heures</th>
+                                </tr>
+                            </thead>
+                            <tbody id="Tbody">
+                            <tr><td>Lundi</td> <td id="Lundi"></td></tr>
+                            <tr ><td>Mardi</td> <td id="Mardi"></td></tr>
+                            <tr ><td>Mercredi</td> <td id="Mercredi"></td></tr>
+                            <tr ><td>Jeudi</td> <td id="Jeudi"></td></tr>
+                            <tr ><td>Vendredi</td> <td id="Vendredi"></td></tr>
+                            <tr ><td>Samedi</td> <td id="Samedi"></td></tr>
+                            <tr ><td>Dimanche</td> <td id="Dimanche"></td></tr>
+                            </tbody>
+                        </table>
+                    </a>
+                </div>
+
+                
+        </div>
+
+        <hr>
+
+        <div class="columns is-flex-direction-row">
+            <div class="column" id="Profile">
+                <h1 style="color: #EEEEEE !important;">Mon Profile</h1>
+                <a  class="box has-text-left " href="/Profile">
+                    <div style="display: flex; flex-direction: column; align-items: center;">
+                        <label class="label" id="Nom">Nom: </label> <br>
+                        <label class="label" id="Prenom">Prenom: </label><br>
+                        <label class="label" id="Numero">Numero de Telephone: </label><br>
+                        <label class="label" id="Email">Email: </label><br>
+                    </div>
+                </a>
+            </div>
+
+            <div class="column" id="SalonCoiffure" style="display: none;">
+                <h1 style="color: #EEEEEE !important;">Mon Salon</h1>
+                <a  class="box has-text-left " href="/Profile">
+                    <div>
+                        <label class="label" id="NomSalon">Nom du salon: </label> <br>
+                        <label class="label" id="AdresseSalon">Adresse du salon: </label><br>
+                        <label class="label" id="HeureOuverture">Heure d'ouverture du salon: </label><br>
+                        <label class="label" id="HeureFermeture">Heure d'fermeture du salon: </label><br>
+                    </div>
+                </a>
+            </div>
+            
+        </div>
+
+    </div>
+
+    <script type="module" src="./script.js"></script>
+</body>
+</html>

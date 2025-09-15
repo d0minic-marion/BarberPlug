@@ -1,0 +1,15 @@
+html, body {
+  margin: 0;
+  height: 100%;
+  background-color: #222831 ;
+}
+
+
+#buttons {
+  text-align: center;
+}
+
+
+.card {
+  background-color: #393e46 !important;
+}

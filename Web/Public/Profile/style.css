@@ -1,0 +1,165 @@
+@font-face {
+  font-family: 'BattlesbridgeDemoRegular';
+  src: url('../BattlesbridgeDemoRegular.ttf');
+}
+
+/* Assuming .pole is a child of the body */
+body {
+  font-family: 'Roboto';
+  margin: 0px;
+  background-color: #222831;
+}
+
+
+.Profil, .modificationProfil {
+  padding-top: 50px;
+  background-color: #393e46;
+  justify-content: center;
+  align-items: center;
+  width: 50em;
+  height: 38em;
+  margin: auto;
+  margin-top: 7vh;
+  border-radius: 25px;
+  color: #EEEEEE;
+}
+
+
+
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-container input {
+  margin-bottom: 15px;
+  border: 0px;
+  border-bottom: 1px solid black;
+  transition: all 0.3s ease-in-out;
+  width: 45em;
+  height: 3em;
+  border-radius: 10px;
+  background-color: #222831;
+  color: #EEEEEE;
+
+
+}
+
+
+.input-container input::placeholder {
+  color: #EEEEEE;
+
+}
+.espaceCoiffeur {
+  display: flex;
+}
+
+#bioInputReg, #bioInputRig {
+  width: 25em;
+  height: 4em;
+  resize: none;
+  margin-top: 2.5em;
+  margin-left: 2em;
+}
+
+.pdp {
+  display: flex;
+  flex-direction: column;
+}
+
+#insertImage {
+  width: 9.5em;
+  height: 9.5em;
+  position: absolute;
+  opacity: 0;
+}
+
+#pdp1, #pdp {
+  width: 8em;
+  height: 8em;
+  
+}
+
+.input-container input:focus,
+.input-container input:hover {
+  outline: none;
+  transform: scale(1.05);
+}
+
+
+.container button {
+  border-radius: 12px;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  border: 1px solid rgba(0, 0, 0, 0.13); 
+  transition: all 0.3s ease;
+  background-color: #222831;
+  width: 10em;
+  height: 3em;
+}
+
+.Profil button {
+  border-radius: 12px;
+  color: white;
+  border: 1px solid rgba(0, 0, 0, 0.13); 
+  transition: all 0.3s ease;
+  background-color: #222831(58, 58, 133);
+  width: 10em;
+  height: 3em;
+}
+
+.Profil button:hover, .container button:hover {
+  background-color: #FD7014;
+
+}
+
+#AnnulerButton {
+  background-color: #9b4810;
+}
+
+#AnnulerButton:hover {
+  background-color: #ff0000;
+}
+
+.container button:hover {
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  transform: scale(1.04);
+  cursor:pointer;
+}
+
+.Profil button:hover {
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  transform: scale(1.04);
+  cursor:pointer;
+}
+
+
+
+.create-account {
+  position: absolute;
+  bottom: 96px;
+  left: 0px;
+}
+
+.login-account {
+  position: absolute;
+  bottom: -30px;
+}
+
+.login-account a{
+  color: rgba(20, 19, 19, 0.753);
+
+}
+
+
+.forgot-password a, .create-account a{
+  color: rgba(20, 19, 19, 0.753);
+  
+}
+
+.forgot-password a:hover, .create-account a:hover{
+  color: rgba(109, 71, 71, 0.753);
+}
